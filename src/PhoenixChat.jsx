@@ -108,7 +108,7 @@ export class PhoenixChat extends React.Component {
 
     this.uuid = localStorage.phoenix_chat_uuid
     const params = { uuid: this.uuid }
-    this.socket = new Socket("ws://localhost:4000/socket", { params })
+    this.socket = new Socket("ws://192.168.195.143:4000/socket", { params })
     this.socket.connect()
 
     this.configureChannels(this.uuid)
